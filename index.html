@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See 'N' Say Storymaker</title>
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header section with 90s vibes -->
+        <header>
+            <h1>See 'N' Say Storymaker</h1>
+            <p>Create your own story with a twist! Click the buttons to begin.</p>
+        </header>
+
+        <!-- Main content area with buttons and story display -->
+        <main>
+            <!-- Word selection buttons -->
+            <section class="button-section">
+                <button class="btn" id="subjectBtn">Pick a Subject</button>
+                <button class="btn" id="verbBtn">Pick a Verb</button>
+                <button class="btn" id="adjectiveBtn">Pick an Adjective</button>
+                <button class="btn" id="objectBtn">Pick an Object</button>
+                <button class="btn" id="placeBtn">Pick a Place</button>
+                <button class="btn" id="randomBtn">Random Story</button> <!-- New Button -->
+            </section>
+
+            <!-- Action buttons for speaking or resetting the story -->
+            <section class="action-buttons">
+                <button class="action-btn" id="speakBtn">Tell the Story</button>
+                <button class="action-btn reset-btn" id="resetBtn">Reset Story</button>
+            </section>
+
+            <!-- Display generated story -->
+            <section class="story-display">
+                <h2>Your Totally Awesome Story:</h2>
+                <p id="story">Your story will be displayed here...</p>
+            </section>
+        </main>
+
+        <!-- Footer with playful vibe -->
+        <footer>
+            <p>Get ready for a totally tubular adventure!</p>
+        </footer>
+    </div>
+
+    <!-- Link external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

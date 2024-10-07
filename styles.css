@@ -1,0 +1,147 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffec99; /*  background color */
+    color: #000; /*  text color */
+}
+
+/* Main wrapper with retro look */
+.wrapper {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 5px dashed #ff69b4; /*  border color */
+    position: relative;
+    overflow: hidden;
+}
+
+/* 90s-style pattern in the background */
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+    transform: rotate(30deg);
+}
+
+.wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.3;
+    transform: rotate(150deg);
+}
+
+/* Header styling with funky colors */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff69b4; /*  header color */
+    text-shadow: 3px 3px 0px #2ecc71; /* Shadow color */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #34495e; /*  paragraph color */
+}
+
+/* Button section styling for 90s flair */
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #3498db; /*  button color */
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 180px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e74c3c; /* Hover color */
+    transform: scale(1.1);
+}
+
+/* Action buttons for speaking/resetting */
+.action-buttons {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-btn {
+    background-color: #2ecc71; /*  action button color */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #27ae60; /* Hover color */
+}
+
+.reset-btn {
+    background-color: #e74c3c; /* reset button color */
+}
+
+.reset-btn:hover {
+    background-color: #c0392b; /* Hover color */
+}
+
+/* Story display area */
+.story-display {
+    background-color: #ecf0f1; /*  story display background color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.story-display h2 {
+    font-size: 2rem;
+    color: #8e44ad; /*  story display heading color */
+    text-shadow: 2px 2px #ff69b4; /* Shadow color */
+    margin-bottom: 10px;
+}
+
+#story {
+    font-size: 1.5rem;
+    color: #2c3e50; /*  story text color */
+}
+
+/* Footer with retro flair */
+footer {
+    font-size: 1.1rem;
+    color: #7f8c8d; /* footer color */
+    font-style: italic;
+}
